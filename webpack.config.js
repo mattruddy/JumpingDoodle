@@ -1,7 +1,24 @@
+var path = require('path');
+
 module.exports = {
-  entry: "./lib/jumpingDoodle.js",
+  entry: "./lib/game.js",
   output: {
-  	filename: "./lib/bundle.js"
+    filename: "./lib/bundle.js"
+  },
+  module: {
+    loaders: [
+      {
+        test: [/\.jsx?$/, /\.js?$/],
+        exclude: /(node_modules)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ]
   },
   devtool: 'source-map',
+  resolve: {
+    extensions: [".js"]
+  }
 };

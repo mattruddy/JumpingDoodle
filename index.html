@@ -1,10 +1,19 @@
 <html>
   <head>
     <title>JumpingDoodle</title>
+    <style>
+    canvas {
+      display: block;
+      margin: auto;
+      border: 4px solid grey;
+    }
+    </style>
   </head>
   <body>
-    <h1>Jumping Doodle</h1>
-    <canvas id="game-canvas"></canvas>
-    <script src="./lib/bundle.js"></script>
+    <script type="text/javascript" src="./lib/jumpingDoodle.js"></script>
+    <script src="./lib/game.js"></script>
+    <script type="text/javascript" src="./lib/platform.js"></script>
+    <script type="text/javascript" src="./lib/hero.js"></script>
+    <canvas id="canvas" height="600px" width="600px"></canvas>
   </body>
 </html>
