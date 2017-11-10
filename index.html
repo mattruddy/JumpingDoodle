@@ -7,10 +7,21 @@
       margin: auto;
       border: 4px solid grey;
     }
+
+    .jump {
+      display: flex;
+      justify-content: center;
+    }
     </style>
   </head>
   <body>
     <h1 id="score">0</h1>
+    <div class="jump">
+      <h1>Jumping Doodle</h1>
+    </div>
+    <div style="display:none;">
+      <img id="source" src="file:///Users/mattruddy/Desktop/IMG_1043.jpeg" alt="">
+    </div>
     <script type="text/javascript" src="./lib/jumpingDoodle.js"></script>
     <script src="./lib/game.js"></script>
     <script type="text/javascript" src="./lib/platform.js"></script>
