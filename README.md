@@ -29,7 +29,6 @@ Architecture
 
 JavaScript will be used for the gamelogic,
 Foo.js and HTML5 for the rendering effects,
-Along with webpack to provide a bundle.js file
 
 Timeline
 
