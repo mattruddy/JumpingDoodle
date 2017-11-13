@@ -1,17 +1,52 @@
-<html>
+<html class='main'>
   <head>
     <title>JumpingDoodle</title>
     <style>
-    canvas {
-      display: block;
-      margin: auto;
-      border: 4px solid grey;
-      background: url("https://nature.desktopnexus.com/get/1242542/?t=t3oerbrqdcuqugcib8cjevuct35a0621b305226");
+    .help {
+      display: flex;
+      flex-direction: column;
     }
 
-    .jump {
+    .first {
+      display: flex;
+    }
+
+    canvas {
+      display: block;
+      margin: 0;
+      border: 4px solid grey;
+      /*background-image: url("https://nature.desktopnexus.com/get/1242542/?t=t3oerbrqdcuqugcib8cjevuct35a0621b305226");*/
+      background: white;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      width: 30%
+    }
+
+    .header {
       display: flex;
       justify-content: center;
+    }
+
+    .main {
+      background: lightgrey;
+    }
+    .jump {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: baseline;
+      width: 30%;
     }
 
     .img {
@@ -19,27 +54,53 @@
     }
     </style>
   </head>
-  <body>
-    <h1 id="score">0</h1>
-    <div class="jump">
-      <h1>Save the Polar Bears</h1>
+  <div class="help">
+    <div class="second">
+      <div class="header">
+        <div class="jump">
+          <h1 id="score">0</h1>
+          <h1>Save the Polar Bears</h1>
+        </div>
+      </div>
     </div>
-    <div class="bear" style="display:none;">
-      <img id="bear" src="https://i.ytimg.com/vi/6I3K_w0Q2Mo/maxresdefault.jpg" alt="">
-    </div>
-    <div class="img" style="display:none;">
-      <img id="source" src="https://upload.wikimedia.org/wikipedia/en/0/0b/KravenTheHunterByJohnRomitaSr.gif" alt="">
-    </div>
-    <div class="ice" style="display:none;">
-      <img id="ice" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVVUcwLt4hMIgZAnjisSoHXsM7ac3IjzFXCnZWQspwQGQRtwD-w">
-    </div>
-    <script type="text/javascript" src="../lib/jumpingDoodle.js"></script>
-    <script src="../lib/game.js"></script>
-    <script type="text/javascript" src="../lib/platform.js"></script>
-    <script type="text/javascript" src="../lib/hero.js"></script>
-    <script src="../lib/bears.js" type="text/javascript">
+    <div class="first">
+      <body>
+        <div class="bear" style="display:none;">
+          <img id="bear" src="https://i.ytimg.com/vi/6I3K_w0Q2Mo/maxresdefault.jpg" alt="">
+        </div>
+        <div class="img" style="display:none;">
+          <img id="source" src="https://upload.wikimedia.org/wikipedia/en/0/0b/KravenTheHunterByJohnRomitaSr.gif" alt="">
+        </div>
+        <div class="ice" style="display:none;">
+          <img id="ice" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVVUcwLt4hMIgZAnjisSoHXsM7ac3IjzFXCnZWQspwQGQRtwD-w">
+        </div>
+        <script type="text/javascript" src="../lib/jumpingDoodle.js"></script>
+        <script src="../lib/game.js"></script>
+        <script type="text/javascript" src="../lib/platform.js"></script>
+        <script type="text/javascript" src="../lib/hero.js"></script>
+        <script src="../lib/bears.js" type="text/javascript">
 
-    </script>
-    <canvas id="canvas" height="600px" width="600px"></canvas>
-  </body>
+        </script>
+        <div class="controls">
+          <h1>Press</h1>
+          <ul>
+            <li>space to start</li>
+            <li>"p" to pause</li>
+            <li>"c" to resume</li>
+            <li>"r" to restart</li>
+            <li> <- and -> to move</li>
+          </ul>
+        </div>
+        <canvas id="canvas" height="600px" width="600px"></canvas>
+        <div class="info">
+          <a href="https://www.linkedin.com/in/matthew-ruddy-13817196/">LinkedIn</a>
+          <a href="https://github.com/mattruddy">GitHub</a>
+          <a href="mattruddy.info">Website</a>
+        </div>
+
+      </body>
+
+    </div>
+
+  </div>
 </html>
