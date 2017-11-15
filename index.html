@@ -31,6 +31,14 @@
 
     .controls ul {
       list-style-type: none;
+      padding: 0;
+      width: 63%;
+    }
+
+    .controls ul div li {
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
     }
 
     .header {
@@ -109,13 +117,58 @@
 
         </script>
         <div class="controls">
-          <h1>Press</h1>
+          <h1>Controls</h1>
           <ul>
-            <li>space to start</li>
-            <li>"p" to pause</li>
-            <li>"c" to resume</li>
-            <li>"r" to restart</li>
-            <li> <- and -> to move</li>
+            <div>
+              <li>
+                <div>
+                  SPACE
+                </div>
+                <div>
+                  start
+                </div>
+              </li>
+            </div>
+            <div>
+              <li>
+                <div>
+                  P
+                </div>
+                <div>
+                  pause
+                </div>
+              </li>
+            </div>
+            <div>
+              <li>
+                <div>
+                  C
+                </div>
+                <div>
+                  continue
+                </div>
+              </li>
+            </div>
+            <div>
+              <li>
+                <div>
+                  <-
+                </div>
+                <div>
+                  move left
+                </div>
+              </li>
+            </div>
+            <div>
+              <li>
+                <div>
+                  ->
+                </div>
+                <div>
+                  move right
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
         <canvas id="canvas" height="600px" width="600px"></canvas>
@@ -124,7 +177,7 @@
           <ul>
             <li><a href="https://www.linkedin.com/in/matthew-ruddy-13817196/">LinkedIn</a></li>
             <li><a href="https://github.com/mattruddy">GitHub</a></li>
-            <li><a href="mattruddy.info">Website</a></li>
+            <li><a href="https://mattruddy.github.io/">Website</a></li>
           </ul>
         </div>
 
